@@ -1,5 +1,9 @@
+header {
+    height: 50px;
+}
 .container {
     display: flex;
+    height: auto;
 }
 
 .nav_sx, .nav_dx {
@@ -22,12 +26,24 @@
 
 .dropdown-list {
     display: none;
+    list-style: none;
 }
 
 .menu {
+    position: relative;
     margin-right: 15px;
 }
 
 .menu a:hover{
     color:magenta;
 }
+
+.dropdown_menu li a{
+    display: block;
+    text-decoration: none;
+}
+.menu ul a {
+    display:block;
+    padding: 8px 5px;
+    background-color:#fff;
+    box-shadow: 1px 10px 10px #aaaaaa;
