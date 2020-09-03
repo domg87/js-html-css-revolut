@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+}
+
+.nav_sx, .nav_dx {
+    margin-top: 20px;;
+}
+
+.logo {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.list_sx li{
+    align-content: center;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.nav-list li {
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+}
