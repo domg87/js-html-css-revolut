@@ -3,6 +3,8 @@
 }
 
 .nav_sx, .nav_dx {
+    display: flex;
+    align-items: center;
     margin-top: 20px;;
 }
 
@@ -11,15 +13,21 @@
     vertical-align: middle;
 }
 
-.list_sx li{
+.menu, .list_sx li{
     align-content: center;
     display: inline-block;
-    text-transform: uppercase;
-}
-.nav-list li {
-    display: inline-block;
+    text-decoration: none;
 }
 
-.dropdown {
+
+.dropdown-list {
     display: none;
+}
+
+.menu {
+    margin-right: 15px;
+}
+
+.menu a:hover{
+    color:magenta;
 }
