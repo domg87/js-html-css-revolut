@@ -1,15 +1,20 @@
 header {
     height: 50px;
+    line-height: 50px;
 }
 .container {
     display: flex;
-    height: auto;
+    
 }
 
-.nav_sx, .nav_dx {
+.list_sx, .nav-list{
     display: flex;
-    align-items: center;
-    margin-top: 20px;;
+}
+
+
+.list_sx li{
+    margin-right: 20px;
+    text-transform: uppercase;
 }
 
 .logo {
@@ -17,20 +22,40 @@ header {
     vertical-align: middle;
 }
 
-.menu, .list_sx li{
-    align-content: center;
-    display: inline-block;
-    text-decoration: none;
+/* CLASS UNIX */
+
+.menu, .dropdown-list, .list_sx li {
+    list-style: none;
+}
+
+
+/* CLASS UNIX */
+
+.nav_dx {
+    margin-left: auto;
+}
+
+
+.nav-list li {
+    position: relative;
+}
+
+.list_sx, .nav-list {
+    display: flex;
 }
 
 
 .dropdown-list {
+    position: absolute;
     display: none;
-    list-style: none;
+    white-space: nowrap;
+    padding: 10px 10px;
+    line-height: 40px;
+    box-shadow: 0 0 10px #aaaaaa;
 }
 
+
 .menu {
-    position: relative;
     margin-right: 15px;
 }
 
@@ -38,12 +63,12 @@ header {
     color:magenta;
 }
 
-.dropdown_menu li a{
-    display: block;
-    text-decoration: none;
+
+
+.btn {
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #EB008D;
+
 }
-.menu ul a {
-    display:block;
-    padding: 8px 5px;
-    background-color:#fff;
-    box-shadow: 1px 10px 10px #aaaaaa;
